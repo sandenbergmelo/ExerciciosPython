@@ -3,7 +3,8 @@ import os
 def restart_program():
     python = sys.executable
     os.execl(python, python, * sys.argv)
-from random import randint, weibullvariate
+
+from random import randint
 rand = randint(0, 5)
 
 print('-=-' * 20)
