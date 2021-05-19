@@ -1,16 +1,11 @@
-n = int(input('Digite um número: '))
+casa = float(input('Valor da casa R$'))
+sal = float(input('Salário do comprador R$'))
+anos = int(input('Quantos anos de financiamento? '))
 
-escolha = int(input('''Escolha uma base para converter o número
-[ 1 ] Binário
-[ 2 ] Octal
-[ 3 ] Exadecimal
-Opção: '''))
+valorParcelas = casa / (anos * 12)
+print(f'Para o financiamento dessa cassa de R${casa:.2f} em {anos} anos\no valor da parcela será de R${valorParcelas:.2f}')
 
-if escolha == 1:
-	print(f'O número {n} em binário é {n:b}')
-elif escolha == 2:
-	print(f'O número {n} em octal é {n:o}')
-elif escolha == 3:
-	print(f'O número {n} em exadecimal é {n:x}')
+if (sal * 0.3) >= valorParcelas:
+	print('Empréstimo pode ser CONCEDIDO!')
 else:
-	print('Escolha INVÁLIDA!')
+	print('Empréstimo NEGADO!')
