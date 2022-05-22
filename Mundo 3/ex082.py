@@ -1,4 +1,4 @@
-# Dividindo valores em várias Dividindo valores em várias listas valores em várias listasistas
+# Dividindo valores em várias listas
 
 completa = []
 pares = []
