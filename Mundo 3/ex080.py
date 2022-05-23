@@ -16,5 +16,6 @@ for i in range(0, 5):
                 lista.insert(j, n)
                 print(f'Valor {n} inserido na posição {j}')
                 break
+
 print('-='*30)
 print(f'Os valores digitados foram {lista}')
