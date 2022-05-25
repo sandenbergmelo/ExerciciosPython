@@ -51,5 +51,4 @@ while True:
     print('-'*30)
     print(f'{nome:<8}{notas[0]:^8}{notas[1]:^8}')
 
-
 print('Programa finalizado')
