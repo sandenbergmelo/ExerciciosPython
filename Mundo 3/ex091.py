@@ -4,14 +4,14 @@ from operator import itemgetter
 from random import randint
 from time import sleep
 
-resultados = {
-    'Jogador1': randint(1, 6),
-    'Jogador2': randint(1, 6),
-    'Jogador3': randint(1, 6),
-    'Jogador4': randint(1, 6),
-}
+resultados = {}
 
-print('Resultados: ')
+quantidade = int(input('Quantidade de jogadores: '))
+
+for i in range(quantidade):
+    resultados[f'Jogador{i+1}'] = randint(1, 6)
+
+print('\nResultados: ')
 
 for key, value in resultados.items():
     print(f'{key} tirou {value} no dado.')
