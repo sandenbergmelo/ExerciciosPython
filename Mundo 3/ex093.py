@@ -29,5 +29,5 @@ for key, value in jogador.items():
 print(f'\nO jogador {jogador["nome"]} jogou {n_de_partidas} partidas.')
 
 for partida, gols in enumerate(jogador['gols']):
-    print(f'    => Na partida, {partida+1} marcou {gols} gols.')
+    print(f'    => Na partida {partida+1}, marcou {gols} gols.')
 print(f'Foi um total de {jogador["total"]} gols.')
