@@ -1,6 +1,6 @@
 # Formatando Moedas em Python
 
-import moeda
+from utilidadesCeV import moeda
 
 p = float(input('Digite um preço R$'))
 

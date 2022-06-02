@@ -1,4 +1,4 @@
-def resumo(valor=0, aumento=10, redução=5):
+def resumo(valor: float = 0, aumento: float = 10, redução: float = 5) -> None:
     """Mostra um resumo do valor"""
     print('-'*35)
     print('RESUMO DO VALOR'.center(35))
@@ -13,7 +13,7 @@ def resumo(valor=0, aumento=10, redução=5):
     print('-'*35)
 
 
-def aumentar(valor=0, taxa=0, formatar=False):
+def aumentar(valor: float = 0, taxa: float = 0, formatar: bool = False):
     """Retorna o valor com uma aumento percentual"""
     res = valor * (100 + taxa) / 100
     if formatar:
@@ -21,7 +21,7 @@ def aumentar(valor=0, taxa=0, formatar=False):
     return res
 
 
-def reduzir(valor=0, taxa=0, formatar=False):
+def reduzir(valor: float = 0, taxa: float = 0, formatar: bool = False):
     """Retorna o valor com uma redução percentual"""
     res = valor * (100 - taxa) / 100
     if formatar:
@@ -29,7 +29,7 @@ def reduzir(valor=0, taxa=0, formatar=False):
     return res
 
 
-def dobro(valor=0, formatar=False):
+def dobro(valor: float = 0, formatar: bool = False):
     """Retorna o dobro de um valor"""
     res = valor * 2
     if formatar:
@@ -37,7 +37,7 @@ def dobro(valor=0, formatar=False):
     return res
 
 
-def metade(valor=0, formatar=False):
+def metade(valor: float = 0, formatar: bool = False):
     """Retorna a metade de um valor"""
     res = valor / 2
     if formatar:
@@ -45,6 +45,6 @@ def metade(valor=0, formatar=False):
     return res
 
 
-def formatar_moeda(valor=0, moeda='R$'):
+def formatar_moeda(valor: float = 0, moeda: str = 'R$') -> str:
     """Formata um valor numérico para um valor monetário"""
     return f'{moeda}{valor:.2f}'.replace('.', ',')
