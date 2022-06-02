@@ -15,7 +15,6 @@ def ler_dinheiro(msg: str = '') -> float:
 
 def ler_int(msg: str = '') -> int:
     """Lê um número inteiro"""
-    from math import floor
     while True:
         valor = str(input(msg)).strip()
 
@@ -23,4 +22,4 @@ def ler_int(msg: str = '') -> int:
             print('[red][bold]ERRO![/] Digite um número inteiro válido[/]')
             continue
 
-        return floor(float(valor))
+        return int(valor)
