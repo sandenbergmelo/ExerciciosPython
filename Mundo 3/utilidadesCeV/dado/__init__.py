@@ -13,13 +13,31 @@ def ler_dinheiro(msg: str = '') -> float:
         return float(valor)
 
 
-def ler_int(msg: str = '') -> int:
+def input_int(msg: str = '') -> int:
     """Lê um número inteiro"""
     while True:
-        valor = str(input(msg)).strip()
-
-        if not valor.isdigit() or valor == '':
-            print('[red][bold]ERRO![/] Digite um número inteiro válido[/]')
+        try:
+            valor = int(str(input(msg)).strip())
+        except (ValueError, TypeError):
+            print('[red][bold]ERRO![/] Digite um número inteiro válido.[/]')
             continue
+        except KeyboardInterrupt:
+            print('\n[yellow][bold]Interrupção![/] O usuário preferiu interromper a leitura.[/]')
+            valor = 0
 
-        return int(valor)
+        return valor
+
+
+def input_float(msg: str = '') -> float:
+    """Lê um número real"""
+    while True:
+        try:
+            valor = float(str(input(msg)).strip().replace(',', '.'))
+        except (ValueError, TypeError):
+            print('[red][bold]ERRO![/] Digite um número real válido[/]')
+            continue
+        except KeyboardInterrupt:
+            print('\n[yellow][bold]Interrupção![/] O usuário preferiu interromper a leitura.[/]')
+            valor = 0.0
+
+        return valor
