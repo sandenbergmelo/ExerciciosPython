@@ -3,6 +3,6 @@ inverso = frase[::-1]
 
 print(f'O inverso de {frase} é {inverso}')
 if frase == inverso:
-	print('A frase é um palindromo')
+	print('A frase é um palíndromo')
 else:
-	print('A frase não é um palindromo')
+	print('A frase não é um palíndromo')

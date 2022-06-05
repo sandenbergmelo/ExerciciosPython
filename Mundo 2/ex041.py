@@ -1,8 +1,8 @@
 from datetime import date
 
 anoAtual = date.today().year
-anoNascimeno = int(input('Digite o ano de nascimento do atleta: '))
-idade = anoAtual - anoNascimeno
+anoNascimento = int(input('Digite o ano de nascimento do atleta: '))
+idade = anoAtual - anoNascimento
 
 if idade >= 6:
 	if idade <= 9:

@@ -13,7 +13,7 @@ print('-=-' * 20)
 n = int(input('Em qual número eu pensei? '))
 
 if n == rand:
-	print('PARABENS! Você adivinhou!')
+	print('PARABÉNS! Você adivinhou!')
 else:
 	print(f'ERRADO! Eu pensei em {rand}')
 

@@ -12,4 +12,4 @@ elif idade > 18:
 	print(f'Já deveria ter se alistado há {idade - 18} anos.')
 	print(f'O alistamento foi em {anoAtual - (idade - 18)}.')
 elif idade == 18:
-	print("Deve se alistar imediatamete!")
+	print("Deve se alistar imediatamente!")

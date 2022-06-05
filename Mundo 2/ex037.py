@@ -3,7 +3,7 @@ n = int(input('Digite um número: '))
 escolha = int(input('''Escolha uma base para converter o número
 [ 1 ] Binário
 [ 2 ] Octal
-[ 3 ] Exadecimal
+[ 3 ] Hexadecimal
 Opção: '''))
 
 if escolha == 1:
